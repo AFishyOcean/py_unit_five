@@ -4,17 +4,19 @@ def fibonacci(x):
     :param number: The number of Fibonacci terms to return
     :return: A string consisting of a number of terms of the Fibonacci sequence.
     """
-    c = ""
+    fib = ""
+    c = 0
     a = 0
     b = 1
     for x in range(x):
-        c +=str (a + b)+ ""
+        c = a + b
         a = b
         b = c
-    return c
+        fib +=str(c)+ " "
+    return fib
 def main():
     x = int(input("How many terms would you like?"))
     fibonacci(x)
-    print(fibonaci(x))
+    print(fibonacci(x))
 
 main()
