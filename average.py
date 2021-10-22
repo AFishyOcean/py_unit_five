@@ -3,10 +3,10 @@ def average():
     tot = 0
     while True:
         x = (input("Enter a number (q to stop)"))
-        t = 1 + t
         if x == "q":
             return float(tot) / t
         else:
+            t = 1 + t
             tot = int(x) + tot
 
 
